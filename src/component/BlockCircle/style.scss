@@ -1,0 +1,26 @@
+.wrapper-slider {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: seashell;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  &__circle-snake {
+    height: 644px;
+    width: 644px;
+    position: relative;
+    border-radius: 100%;
+    .wrapper-char {
+      width: 100%;
+      height: 100%;
+      display: block;
+      transform: rotate(-90deg);
+    }
+  }
+}
+.item-char {
+  width: 100%;
+  border-radius: 2px;
+}

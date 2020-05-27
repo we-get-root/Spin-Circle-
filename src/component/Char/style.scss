@@ -1,0 +1,16 @@
+.circle-snake__wrapper-char {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  overflow: hidden;
+  // background: rgb(255, 223, 237);
+  // padding-left: 20%;
+  div {
+    font-family: Comfortaa;
+    color: rgb(235, 255, 250);
+    // padding-bottom: 3px;
+    padding-left: 15px;
+    transform: rotate(90deg);
+    font-weight: 600;
+  }
+}

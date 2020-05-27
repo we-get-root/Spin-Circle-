@@ -1,0 +1,62 @@
+@mixin _input-circle {
+  position: absolute;
+  right: 343px;
+  width: 42px;
+  height: 42px;
+  top: 0px;
+  outline: none;
+  border: none;
+  color: transparent;
+  background: rgba(177, 136, 170, 0.401);
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.input-circle {
+  @include _input-circle();
+  animation: ball-top 0.5s cubic-bezier(0.15, 0.16, 0.45, 0.94) both;
+
+}
+
+.input-circle__active {
+  @include _input-circle();
+  animation: ball 1.5s cubic-bezier(0.15, 0.16, 0.45, 0.94) both;
+}
+
+@keyframes ball {
+  0% {
+    transform: translateY(0px);
+  }
+  15% {
+    transform: translateY(200px);
+  }
+  45% {
+    transform: translateY(90px);
+  }
+  50% {
+    transform: translateY(90px);
+  }
+  70% {
+    transform: translateY(200px);
+  }
+  80% {
+    transform: translateY(180px);
+  }
+  90% {
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translateY(200px);
+  }
+}
+
+@keyframes ball-top {
+  0% {
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
